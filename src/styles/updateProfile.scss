@@ -1,0 +1,62 @@
+@import "./mobile";
+@import "./fonts";
+@import "./colors";
+
+.ProfileUpdate {
+  label {
+    font-family: $font-family-Bebas;
+    letter-spacing: 2px;
+  }
+  .update-jobs-title,
+  .update-freelancer-title {
+    h3 {
+      font-family: $font-family-Bebas;
+      letter-spacing: 2px;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    label {
+      font-family: $font-family-Bebas;
+      letter-spacing: 2px;
+    }
+  }
+
+  .modalBody {
+    width: 90%;
+    margin: 20px auto;
+    .modalForm {
+      // border: 2px inset black;
+      width: 100%;
+      .modalDiv {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        text-align: center;
+
+        @include mobile-small {
+          flex-direction: column;
+        }
+        div {
+          width: 20rem;
+          margin: 20px;
+          @include mobile-small {
+            width: 100%;
+            margin: 2px;
+          }
+        }
+      }
+      .textInput {
+        width: 94%;
+        display: flex;
+        flex-direction: column;
+        margin: 20px auto;
+        text-align: center;
+
+        @include mobile-small {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

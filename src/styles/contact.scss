@@ -1,0 +1,37 @@
+@import "mobile";
+@import "flexCenter";
+@import "colors";
+@import "fonts";
+
+.contactFormContainer {
+  h4 {
+    font-family: $font-family-Bebas;
+    letter-spacing: 2px;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 20px;
+  }
+  label {
+    font-family: $font-family-Bebas;
+    letter-spacing: 2px;
+  }
+  input {
+    margin-bottom: 10px;
+  }
+}
+
+.contact-avatar-company,
+.contact-avatar-freelancer {
+  max-width: 250px;
+  max-height: 150px;
+  margin: 0px 30px;
+  clip-path: circle();
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  @include mobile-small {
+    display: none;
+  }
+}

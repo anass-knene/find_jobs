@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@import "./updateProfile.scss";
+@import "./companyJobs.scss";
+@import "./companyProfile.scss";
+@import "./favoriteListCompanyProfile.scss";
+@import "./fonts";
+@import "./colors";
+
+div,
+h1,
+h2,
+p {
+  font-family: $font-family-Roboto;
+}
+
+//changes all placeholders to Italic
+::-webkit-input-placeholder {
+  font-style: italic;
+}
+:-moz-placeholder {
+  font-style: italic;
+}
+::-moz-placeholder {
+  font-style: italic;
+}
+:-ms-input-placeholder {
+  font-style: italic;
+}

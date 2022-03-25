@@ -1,0 +1,48 @@
+@import "./fonts";
+@import "./mobile";
+@import "./buttons";
+@import "./colors";
+
+.freelancerView {
+  width: 70%;
+
+  @include mobile {
+    width: 100%;
+  }
+
+  .freelancerViewContainer {
+    .FavoriteDiv {
+      // position: sticky;
+      // height: auto;
+      // width: auto;
+      // left: 70px;
+      // top: 450px;
+
+      .iconBtn {
+        border: none;
+        background: none;
+      }
+      .Favorite {
+        color: rgba($color-pepper, 0.9);
+        &:hover {
+          color: $color-pepper;
+        }
+      }
+
+      .notFavorite {
+        color: rgba($color-green, 0.9);
+        &:hover {
+          color: $color-green;
+        }
+      }
+    }
+
+    form {
+      textarea {
+        height: 150px;
+        line-height: 150%;
+        resize: vertical;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@import "./colors";
+@import "./fonts";
+@import "./mobile";
+
+.modalHeader {
+  background-color: $color-pinky;
+}
+
+.jobs-searchCardSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.searchCard-card {
+  height: 220px;
+  width: 310px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: $font-family-Roboto;
+  background-color: $color-white;
+  margin: 25px 15px 25px 15px;
+  padding: 15px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  // @include mobile-small {
+  //   height: 45vh;
+  //   width: 80vw;
+  // }
+}
